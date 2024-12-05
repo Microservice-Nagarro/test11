@@ -1,10 +1,28 @@
-﻿using BHF.MS.MyMicroservice.Database.Context;
-using BHF.MS.MyMicroservice.Database.Services;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Context;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Diagnostics.CodeAnalysis;
 
-namespace BHF.MS.MyMicroservice.Database
+namespace BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database
 {
     [ExcludeFromCodeCoverage(Justification = "It's an IoC initializer")]
     public static class DependencyInjectionInitializers
@@ -38,3 +56,4 @@ namespace BHF.MS.MyMicroservice.Database
         }
     }
 }
+

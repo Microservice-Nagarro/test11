@@ -1,7 +1,19 @@
-using BHF.MS.MyMicroservice.Models.Settings;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Models.Settings;
 using FluentAssertions;
 
-namespace BHF.MS.MyMicroservice.Tests.Models.Settings
+namespace BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Tests.Models.Settings
 {
     public sealed class HealthCheckSettingsTests
     {
@@ -19,3 +31,4 @@ namespace BHF.MS.MyMicroservice.Tests.Models.Settings
         }
     }
 }
+

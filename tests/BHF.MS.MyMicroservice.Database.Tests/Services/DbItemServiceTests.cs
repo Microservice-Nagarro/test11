@@ -1,14 +1,44 @@
-using BHF.MS.MyMicroservice.Database.Context;
-using BHF.MS.MyMicroservice.Database.Context.Entities;
-using BHF.MS.MyMicroservice.Database.Models.DbItem;
-using BHF.MS.MyMicroservice.Database.Services;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Context;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Context.Entities;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Models.DbItem;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Services;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using Moq;
 using Moq.EntityFrameworkCore;
 using System.Globalization;
 
-namespace BHF.MS.MyMicroservice.Database.Tests.Services
+namespace BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Tests.Services
 {
     public sealed class DbItemServiceTests
     {
@@ -190,3 +220,4 @@ namespace BHF.MS.MyMicroservice.Database.Tests.Services
         }
     }
 }
+

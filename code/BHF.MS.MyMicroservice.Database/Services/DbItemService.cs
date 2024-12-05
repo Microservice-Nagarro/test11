@@ -1,9 +1,33 @@
-﻿using BHF.MS.MyMicroservice.Database.Context;
-using BHF.MS.MyMicroservice.Database.Context.Entities;
-using BHF.MS.MyMicroservice.Database.Models.DbItem;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Context;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Context.Entities;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Models.DbItem;
 using Microsoft.EntityFrameworkCore;
 
-namespace BHF.MS.MyMicroservice.Database.Services
+namespace BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Services
 {
     public class DbItemService(CustomDbContext context) : IDbItemService
     {
@@ -75,3 +99,4 @@ namespace BHF.MS.MyMicroservice.Database.Services
         }
     }
 }
+

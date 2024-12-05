@@ -1,6 +1,24 @@
-using BHF.MS.MyMicroservice.HealthCheck;
-using BHF.MS.MyMicroservice.Models.Settings;
-using BHF.MS.MyMicroservice.Services;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        HealthCheck;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Models.Settings;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Services;
 using FluentAssertions;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
@@ -8,7 +26,13 @@ using Microsoft.Extensions.Options;
 using Moq;
 using System.Net;
 
-namespace BHF.MS.MyMicroservice.Tests.HealthCheck
+namespace BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Tests.HealthCheck
 {
     public sealed class ExampleServiceHealthCheckTests
     {
@@ -74,3 +98,4 @@ namespace BHF.MS.MyMicroservice.Tests.HealthCheck
         }
     }
 }
+

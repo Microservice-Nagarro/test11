@@ -398,5 +398,18 @@ FodyWeavers.xsd
 *.sln.iml
 
 # BHF custom
-/code/BHF.MS.MyMicroservice/yaml/configMap-development.yml
-/code/BHF.MS.MyMicroservice/appsettings.Development.json
+/code/BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            / = $match.Groups[3].Value
+            return . + $newWord + /
+        yaml/configMap-development.yml
+/code/BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            / = $match.Groups[3].Value
+            return . + $newWord + /
+        appsettings.Development.json
+

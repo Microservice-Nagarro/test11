@@ -1,8 +1,26 @@
-﻿using BHF.MS.MyMicroservice.Models;
-using BHF.MS.MyMicroservice.Models.Settings;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Models;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Models.Settings;
 using Microsoft.Extensions.Options;
 
-namespace BHF.MS.MyMicroservice.Services
+namespace BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Services
 {
     public class ExampleService(HttpClient httpClient, IOptions<ServiceSettings> settings) : IExampleService
     {
@@ -17,3 +35,4 @@ namespace BHF.MS.MyMicroservice.Services
         }
     }
 }
+

@@ -1,8 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using Newtonsoft.Json;
 
-namespace BHF.MS.MyMicroservice.Models
+namespace BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Models
 {
     [ExcludeFromCodeCoverage(Justification = "It's a model with no logic")]
     public class ExampleModel
@@ -26,3 +32,4 @@ namespace BHF.MS.MyMicroservice.Models
         public Dictionary<string, string>? Customisations { get; set; }
     }
 }
+

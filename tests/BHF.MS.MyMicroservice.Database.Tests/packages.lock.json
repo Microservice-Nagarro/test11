@@ -631,7 +631,13 @@
           "xunit.extensibility.core": "[2.9.0]"
         }
       },
-      "bhf.ms.mymicroservice.database": {
+      "bhf.ms 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        database": {
         "type": "Project",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "[8.0.8, )",

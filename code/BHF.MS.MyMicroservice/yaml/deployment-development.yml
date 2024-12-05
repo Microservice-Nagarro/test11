@@ -1,16 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mymicroservice-microservice
+  name: 
+            $match = $args[0]
+              = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            - = $match.Groups[3].Value
+            return   + $newWord + -
+        microservice
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mymicroservice-microservice
+      app: 
+            $match = $args[0]
+              = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            - = $match.Groups[3].Value
+            return   + $newWord + -
+        microservice
   template:
     metadata:
       labels:
-        app: mymicroservice-microservice
+        app: 
+            $match = $args[0]
+              = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            - = $match.Groups[3].Value
+            return   + $newWord + -
+        microservice
     spec:
       topologySpreadConstraints:
       - maxSkew: 1
@@ -18,13 +36,31 @@ spec:
         whenUnsatisfiable: ScheduleAnyway
         labelSelector:
           matchLabels:
-            app: mymicroservice-microservice
+            app: 
+            $match = $args[0]
+              = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            - = $match.Groups[3].Value
+            return   + $newWord + -
+        microservice
       nodeSelector:
         "kubernetes.io/os": linux
       automountServiceAccountToken: false
       containers:
-      - name: mymicroservice-microservice
-        image: mymicroservice-microservice:#{BuildRef}#
+      - name: 
+            $match = $args[0]
+              = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            - = $match.Groups[3].Value
+            return   + $newWord + -
+        microservice
+        image: 
+            $match = $args[0]
+              = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            - = $match.Groups[3].Value
+            return   + $newWord + -
+        microservice:#{BuildRef}#
         imagePullPolicy: Never
         env:
         - name: ASPNETCORE_ENVIRONMENT
@@ -60,15 +96,34 @@ spec:
       volumes:
       - name: appsettings-volume
         configMap:
-          name: mymicroservice-configmap
+          name: 
+            $match = $args[0]
+              = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            - = $match.Groups[3].Value
+            return   + $newWord + -
+        configmap
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: mymicroservice-microservice
+  name: 
+            $match = $args[0]
+              = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            - = $match.Groups[3].Value
+            return   + $newWord + -
+        microservice
 spec:
   selector:
-    app: mymicroservice-microservice
+    app: 
+            $match = $args[0]
+              = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            - = $match.Groups[3].Value
+            return   + $newWord + -
+        microservice
   type: NodePort
   ports:
   - port: 8080
+

@@ -1,12 +1,36 @@
-using BHF.MS.MyMicroservice.Controllers;
-using BHF.MS.MyMicroservice.Database.Models.DbItem;
-using BHF.MS.MyMicroservice.Database.Services;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Controllers;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Models.DbItem;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Services;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Moq;
 
-namespace BHF.MS.MyMicroservice.Tests.Controllers
+namespace BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Tests.Controllers
 {
     public class DbItemsControllerTests
     {
@@ -145,3 +169,4 @@ namespace BHF.MS.MyMicroservice.Tests.Controllers
         }
     }
 }
+

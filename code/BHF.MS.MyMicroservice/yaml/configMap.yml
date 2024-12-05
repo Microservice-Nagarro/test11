@@ -1,7 +1,13 @@
-﻿apiVersion: v1
+apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: mymicroservice-configmap
+  name: 
+            $match = $args[0]
+              = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            - = $match.Groups[3].Value
+            return   + $newWord + -
+        configmap
 data:
   appsettings.Production.json: |-
     {

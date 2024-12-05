@@ -1,7 +1,19 @@
-using BHF.MS.MyMicroservice.Database.Models.DbItem;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Models.DbItem;
 using FluentAssertions;
 
-namespace BHF.MS.MyMicroservice.Database.Tests.Models.DbItem
+namespace BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Tests.Models.DbItem
 {
     public sealed class DbItemDtoTests
     {
@@ -28,3 +40,4 @@ namespace BHF.MS.MyMicroservice.Database.Tests.Models.DbItem
         }
     }
 }
+

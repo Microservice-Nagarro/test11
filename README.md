@@ -1,4 +1,10 @@
-# MyMicroservice
+# 
+            $match = $args[0]
+              = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+             = $match.Groups[3].Value
+            return   + $newWord + 
+        
 
 Brief description of purpose of microservice.
 
@@ -11,7 +17,13 @@ Brief description of purpose of microservice.
 	* https://github.com/BHFDigital/BHF.Microservices/blob/main/README.md
 
 ### To run only this microservice manually
-* Copy code\BHF.MS.MyMicroservice\yaml\configMap-development.yml.example as "configMap-development.yml"
+* Copy code\BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            \ = $match.Groups[3].Value
+            return . + $newWord + \
+        yaml\configMap-development.yml.example as "configMap-development.yml"
 * Fill in the inner variables with relevant secrets located inside "uks-local-dev-kv" KeyVault on Azure portal, secret names to look for:
 	* DEV--ConnectionStrings--ClientId
 	* DEV--ConnectionStrings--TenantId
@@ -25,7 +37,25 @@ Brief description of purpose of microservice.
 
 ### How to work with migrations
 * Every single migration command requires Args parameter containing full query string to the databse, sample command below:
-	* Add-Migration InitialMigration -Context CustomDbContext -Project BHF.MS.MyMicroservice.Database -StartupProject BHF.MS.MyMicroservice.Database -Args "Data Source=(local);Initial Catalog=MyMicroservice;User ID=[user];Password=[passwsord];Trust Server Certificate=True"
+	* Add-Migration InitialMigration -Context CustomDbContext -Project BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database -StartupProject BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database -Args "Data Source=(local);Initial Catalog 
+            $match = $args[0]
+            = = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            ; = $match.Groups[3].Value
+            return = + $newWord + ;
+        User ID=[user];Password=[passwsord];Trust Server Certificate=True"
 	* Context - should be set to the name od DbContext class you want to execute your migration command
 	* Project and StartupProject - those should match the name of the project containing your context class
 	* Args - should contain a single parameter, which equals full query string (all of those parameters are supported for every migration command)

@@ -1942,7 +1942,13 @@
         "resolved": "13.3.1",
         "contentHash": "Q2dqDsb0xAlr092grgHk8/vTXI2snIiYM5ND3IXkgJDFIdPnqDYwYnlk+gwzSeRByDLhiSzTog8uT7xFwH68Zg=="
       },
-      "bhf.ms.mymicroservice.database": {
+      "bhf.ms 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            mymicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        database": {
         "type": "Project",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "[8.0.8, )",

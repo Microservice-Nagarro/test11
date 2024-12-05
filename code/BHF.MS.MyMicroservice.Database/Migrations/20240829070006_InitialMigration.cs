@@ -1,8 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace BHF.MS.MyMicroservice.Database.Migrations
+namespace BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Migrations
 {
     /// <inheritdoc />
     public partial class InitialMigration : Migration
@@ -32,3 +38,4 @@ namespace BHF.MS.MyMicroservice.Database.Migrations
         }
     }
 }
+

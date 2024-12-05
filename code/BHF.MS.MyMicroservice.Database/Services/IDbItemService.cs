@@ -1,6 +1,18 @@
-﻿using BHF.MS.MyMicroservice.Database.Models.DbItem;
+using BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Models.DbItem;
 
-namespace BHF.MS.MyMicroservice.Database.Services
+namespace BHF.MS 
+            $match = $args[0]
+            . = $match.Groups[1].Value
+            MyMicroservice = $match.Groups[2].Value
+            . = $match.Groups[3].Value
+            return . + $newWord + .
+        Database.Services
 {
     public interface IDbItemService
     {
@@ -15,3 +27,4 @@ namespace BHF.MS.MyMicroservice.Database.Services
         public Task<bool> Delete(Guid id);
     }
 }
+
